@@ -1,31 +1,82 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication3", "ConsoleApplication3\ConsoleApplication3.vcxproj", "{476B873A-A2BD-4509-A3C9-7D7B753200CC}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{476B873A-A2BD-4509-A3C9-7D7B753200CC}.Debug|x64.ActiveCfg = Debug|x64
-		{476B873A-A2BD-4509-A3C9-7D7B753200CC}.Debug|x64.Build.0 = Debug|x64
-		{476B873A-A2BD-4509-A3C9-7D7B753200CC}.Debug|x86.ActiveCfg = Debug|Win32
-		{476B873A-A2BD-4509-A3C9-7D7B753200CC}.Debug|x86.Build.0 = Debug|Win32
-		{476B873A-A2BD-4509-A3C9-7D7B753200CC}.Release|x64.ActiveCfg = Release|x64
-		{476B873A-A2BD-4509-A3C9-7D7B753200CC}.Release|x64.Build.0 = Release|x64
-		{476B873A-A2BD-4509-A3C9-7D7B753200CC}.Release|x86.ActiveCfg = Release|Win32
-		{476B873A-A2BD-4509-A3C9-7D7B753200CC}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {32F751AF-80AD-45E8-B550-2E09FFDA534A}
-	EndGlobalSection
-EndGlobal
+#include <iostream> 
+void task1()
+{
+	std::cout << "Task1"<<"\n";
+	int a, b;
+	std::cout << "Dlina:";
+	std::cin >> a;
+	std::cout << "Shirina:";
+	std::cin >> b;
+	int s = a * b;
+	int p = (a + b) * 2;
+	std::cout << "Ploshad:" << s;
+	std::cout << "\n";
+	std::cout << "Perimetr:" << p;
+}
+void task2() {
+	std::cout << "Task2"<<"\n";
+	float d;
+	std::cout << "Diametr:";
+	std::cin >> d;
+	float L = 3.14 * d;
+	std::cout << "Dlina okruzhnosti:" << L;
+}
+void task3() {
+	std::cout << "Task3" << "\n";
+	float a, b;
+	std::cin >> a;
+	std::cin >> b;
+	float e = (a + b) / 2;
+	std::cout << "Srednee:" << e;
+}
+void task4() {
+	std::cout << "Task4" << "\n";
+	int a, b;
+	std::cin >> a;
+	std::cin >> b;
+	int A = a * a;
+	int B = b * b;
+	int s = A + B;
+	std::cout << "Summa:" << s;
+	std::cout << "\n";
+	int r = A - B;
+	std::cout << "Raznost:"<< r;
+	std::cout << "\n";
+	int p = A * B;
+	std::cout << "Proizved:"<< p;
+	std::cout << "\n";
+	int c = A / B;
+	std::cout << "Chastnoe:"<< c;
+	std::cout << "\n";
+
+}
+void task5() {
+	std::cout << "Taks5"<<"\n";
+	float a, b;
+	std::cin >> a;
+	std::cin >> b;
+	float s = abs(a + b);
+	std::cout <<"Summa:" <<s;
+	std::cout << "\n";
+	float r = abs(a - b);
+	std::cout << "Raznost:" << r;
+	std::cout << "\n";
+	float p = abs(a * b);
+	std::cout << "Proived:" << p;
+	std::cout << "\n";
+	float c = abs(a / b);
+	std::cout << "Chastnoe:" << c;
+	std::cout << "\n";
+}
+int main() {
+	task1();
+	std::cout << "\n";
+	task2();
+	std::cout << "\n";
+	task3();
+	std::cout << "\n";
+	task4();
+	std::cout << "\n";
+	task5();
+	std::cout << "\n";
+}
