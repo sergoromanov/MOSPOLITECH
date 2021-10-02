@@ -4,8 +4,8 @@ void task1() {
 	std::cout << "Градусы a:";
 	float a;
 	std::cin >> a;
-	float p = a*3.14 / 180;
-	std::cout <<"Радианы:" << p <<"\n";
+	float p = a/ 180;
+	std::cout <<"Радианы:" << p<<"пи" <<"\n";
 }
 void task2() {
 	std::cout << "Task2: Определить значение этого же угла в градусах" << "\n";
@@ -62,7 +62,7 @@ void task6() {
 	std::cin >> b1;
 	std::cout << "C1: ";
 	std::cin >> c1;
-	std::cout << "A2•x + B2•y = C2" << "\n";
+	std::cout << "A2*x + B2*y = C2" << "\n";
 	std::cout << "A2: ";
 	std::cin >> a2;
 	std::cout << "B2: ";
