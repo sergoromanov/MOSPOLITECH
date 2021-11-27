@@ -35,31 +35,31 @@ void task3() {
 }
 void task4() {
 	cout << "Task4: Дано вещественное число A и целое число N (> 0). Используя один цикл, найти сумму 1 + A + A2 + A3 + . . . + A**N" << "\n";
-	float A, a = 1, m = 1;
+	float A, a = 1, m = 0;
 	int N;
 	cout << "A:";
 	cin >> A;
-	cout << "N";
+	cout << "N: ";
 	cin >> N;
-	for (int i = 2; i <= N; i++) {
-		a *= A;
+	for (int i = 1; i <= N; i++) {
+		a *=A;
 		m += a;
 	}
-	cout << m << "\n";
+	cout << m+1 << "\n";
 }
 void task5() {
 	cout << "Task5: Дано вещественное число A и целое число N (> 0). Используя один цикл, найти значение выражения .1 − A + A2 − A3 + . ..± AN ." << "\n";
-	float A, a = 1, m = 1;
+	float A, a = 1, m = 0;
 	int N;
 	cout << "A:";
 	cin >> A;
-	cout << "N";
+	cout << "N:";
 	cin >> N;
-	for (int i = 2; i <= N; i++) {
+	for (int i = 1; i <= N; i++) {
 		a *= -A;
 		m += a;
 	}
-	cout << m << "\n";
+	cout << m+1 << "\n";
 }
 int main()
 {
@@ -71,4 +71,6 @@ int main()
 	task3();
 	cout << "\n";
 	task4();
+	cout << "\n";
+	task5();
 }
