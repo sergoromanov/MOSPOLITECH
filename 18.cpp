@@ -44,9 +44,10 @@ void task2() {
 	}
 	for (int k = 0; k < n; k++) {
 		b[k] = 0;
-		for (int i = k; i < n; i++) {
+		for (int i = 0; i <= k; i++) {
 			b[k] += a[i];
 		}
+		b[k] /= k + 1;
 	}
 	cout << "B:" << "\n";
 	for (int k = 0; k < n; ++k) {
